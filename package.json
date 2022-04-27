@@ -1,0 +1,48 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "expo start --dev-client",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "eject": "expo eject",
+    "build:tailwind": "tailwindcss --input input.css --output tailwind.css --no-autoprefixer && tailwind-rn",
+    "dev:tailwind": "concurrently \"tailwindcss --input input.css --output tailwind.css --no-autoprefixer --watch\" \"tailwind-rn --watch\""
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^12.0.5",
+    "@react-native-async-storage/async-storage": "^1.15.0",
+    "@react-native-firebase/app": "^14.8.0",
+    "@react-navigation/bottom-tabs": "^6.2.0",
+    "@react-navigation/native": "^6.0.8",
+    "@react-navigation/native-stack": "^6.5.0",
+    "expo": "~44.0.0",
+    "expo-font": "~10.0.4",
+    "expo-splash-screen": "~0.14.1",
+    "expo-status-bar": "~1.2.0",
+    "firebase": "^9.6.11",
+    "formik": "^2.2.9",
+    "react": "17.0.1",
+    "react-avatar": "^4.0.0",
+    "react-dom": "17.0.1",
+    "react-native": "0.64.3",
+    "react-native-chart-kit": "^6.12.0",
+    "react-native-dotenv": "^3.3.1",
+    "react-native-linear-gradient": "^2.5.6",
+    "react-native-reanimated": "~2.3.1",
+    "react-native-safe-area-context": "3.3.2",
+    "react-native-svg": "^12.3.0",
+    "react-native-vector-icons": "^9.1.0",
+    "react-native-web": "0.17.1",
+    "twrnc": "^3.0.2",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "concurrently": "^7.0.0",
+    "postcss": "^8.4.6",
+    "tailwindcss": "^3.0.23"
+  },
+  "private": true
+}
